@@ -104,7 +104,7 @@ gcc tftp.c tftp_client.c -o client.out
 2. PUT
 3. GET
 4. Mode
-5. Exit
+5. Exit/ Bye
 ```
 
 ---
