@@ -29,14 +29,23 @@ A C-based TFTP client and server implemented using Linux UDP socket programming.
 
 ```
 TFTP/
-│── tftp.c               # Common functions
-│── tftp.h               # Common definitions
-│── tftp_client.c        # Client implementation
-│── tftp_client.h        # Client header
-│── tftp_server.c        # Server implementation
-│── receive_folder/      # Downloaded files
+├── Client/
+   │── tftp_client.c            # Client implementation
+   │── tftp_client.h             # Client header
+   |── tftp_client_file.c        # Client receive and send files
+
+|── Common/ 
+   │── tftp.c               # Common functions
+   │── tftp.h               # Common definitions
+
+|── Server/
+   │── tftp_server.c             # Server implementation
+   │── tftp_server_file.c        # Server receive and send files
+   │── receive_folder/           # Downloaded files 
+
 │── client.out           # Client executable
 │── server.out           # Server executable
+
 ```
 
 ---
